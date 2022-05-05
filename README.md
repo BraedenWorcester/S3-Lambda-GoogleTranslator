@@ -14,7 +14,7 @@ AWS Lambdas are wonderful in that they allow you run code online without having 
 
 # Example Usage
 
-This is the access policy configuration for an bucket which will accept GetObject and PutObject requests from the public:
+This is the access policy configuration for a bucket which will accept GetObject and PutObject requests from the public:
 
 ![image](https://user-images.githubusercontent.com/56178051/166857204-a44180f4-0ca8-465d-93b8-e3c6b2928e33.png)
 
