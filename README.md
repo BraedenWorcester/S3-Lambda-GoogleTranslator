@@ -20,11 +20,11 @@ Upon uploading this .txt file:
 
 ![image](https://user-images.githubusercontent.com/56178051/166857783-9ec0cf5d-f453-4cc2-9ea5-e4a0f5538aa8.png)
 
-The Lambda will activate and create a new folder alongside the new file inside the bucket:
+The Lambda will activate and create a new folder alongside the old file inside the bucket:
 
 ![image](https://user-images.githubusercontent.com/56178051/166857956-635883e8-ac76-4a81-af40-0dfc5d027f3e.png)
 
-where you will find the same uploaded file:
+where you will find a copy of the old file:
 
 ![image](https://user-images.githubusercontent.com/56178051/166858084-08adad11-62ea-4d84-ad88-172a595561de.png)
 
