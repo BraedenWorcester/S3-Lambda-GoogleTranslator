@@ -12,7 +12,7 @@ This is the access policy configuration for an bucket which will accept GetObjec
 
 ![image](https://user-images.githubusercontent.com/56178051/166857204-a44180f4-0ca8-465d-93b8-e3c6b2928e33.png)
 
-and this is a Lambda trigger set to go off whenever the bucket gets a new .txt file is added:
+and this is a Lambda trigger set to go off whenever the bucket gets a new .txt file:
 
 ![image](https://user-images.githubusercontent.com/56178051/166857541-e869943b-8a01-4f98-83e2-23787f324b34.png)
 
