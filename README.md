@@ -10,7 +10,7 @@ A Lambda function with this code should be triggered upon an object change, and 
 
 
 # A Note on Lambdas
-AWS Lambdas are wonderful in that they allow you run code online without having pay for maintaining a server. This makes them perfect for scenarios where code only needs to be ran once under specific conditions, which is why I've elected to use Lambdas for this little foray into automatic translation. However, if misconfigured, they can cause problems. One such problem is never ending reccurrence if the Lambda is outputting to the bucket where it's getting input (Lambda sees new object added to bucket -> Lambda runs and adds result to bucket -> Lambda sees own added object to bucket -> Lambda runs and adds result to bucket -> Lambda sees own...). To avoid this problem, I've configured the code to place its output into "/translated/" and under no circumstances accept any input like "/translated/inputname.txt".
+AWS Lambdas are wonderful in that they allow you run code online without having to pay for maintaining a server. This makes them perfect for scenarios where code only needs to be ran once under specific conditions, which is why I've elected to use Lambdas for this little foray into automatic translation. However, if misconfigured, they can cause problems. One such problem is never ending reccurrence if the Lambda is outputting to the bucket where it's getting input (Lambda sees new object added to bucket -> Lambda runs and adds result to bucket -> Lambda sees own added object to bucket -> Lambda runs and adds result to bucket -> Lambda sees own...). To avoid this problem, I've configured the code to place its output into "/translated/" and under no circumstances accept any input like "/translated/inputname.txt".
 
 # Example Usage
 
