@@ -6,7 +6,7 @@ This code is meant to be used as an Amazon Web Services Lambda function set to t
 
 A Lambda function with this code should be triggered upon an object change, and I recommend setting a ".txt" suffix as well as possibly a prefix like "translate_this/" so that the Lambda doesn't run unnecessarily on every single object. The trigger should be associated with an S3 bucket that has been configured to allow your Lambda "GetObject" and "PutObject" access for the resources you want to be translated. Finally, your Lambda will need to have a layer containing the 'google_trans_new' library package. Assuming there are no issues accessing the bucket, a new folder named "translated/" should appear next to the triggering files, containing their english translations.
 
-![image](https://user-images.githubusercontent.com/56178051/166860978-c3bd430d-5599-41a4-a91e-9b6130d70ed6.png)
+![image](https://user-images.githubusercontent.com/56178051/167212138-b4641844-4d5b-4184-bceb-92ed4a2c8c10.png)
 
 
 # A Note on Lambdas
