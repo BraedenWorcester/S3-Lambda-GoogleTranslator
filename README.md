@@ -1,6 +1,6 @@
 # Overview
 
-This code is meant to be used as an Amazon Web Services Lambda function set to trigger from objects in one or more S3 buckets. It utilizes the 'google_trans_new' python library ( https://pypi.org/project/google-trans-new/ ) to translate the body content of the triggering object, provided that they are a .txt file, into english. This should successfully translate any .txt file if the language within is supported by Google Translate.
+This code is meant to be used as an Amazon Web Services Lambda function set to trigger from objects in one or more S3 buckets. It utilizes the 'google_trans_new' python library ( https://pypi.org/project/google-trans-new/ ) to translate the body content of the triggering object, provided that they are a .txt file, into english. This should successfully translate any .txt file if the language within is supported by Google Translate, and that the text is encoded in UTF-8. 
 
 # Necessary Structure and Output
 
