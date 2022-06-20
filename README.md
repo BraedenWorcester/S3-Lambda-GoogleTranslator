@@ -17,9 +17,23 @@ AWS Lambdas are wonderful in that they allow you run code online without having 
 Live demo at https://www.youtube.com/watch?v=AWVFFDU64fQ
 
 
-This is the access policy configuration for a bucket which will accept GetObject and PutObject requests from the public:
+This is a sample access policy configuration, for the bucket 'cloud-computing-final-project-hva124', which will accept GetObject and PutObject requests from the public:
 
-![image](https://user-images.githubusercontent.com/56178051/166857204-a44180f4-0ca8-465d-93b8-e3c6b2928e33.png)
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "Statement1",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": [
+                    "s3:GetObject",
+                    "s3:PutObject"
+                ],
+                "Resource": "arn:aws:s3:::cloud-computing-final-project-hva124/*"
+            }
+        ]
+    }
 
 and this is a Lambda trigger set to go off whenever the bucket gets a new .txt file:
 
